@@ -1,0 +1,2 @@
+# table-service
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/73347b4252c84b989ba23f2fdb705f8e)](https://app.codacy.com/app/aravindb22/table-service?utm_source=github.com&utm_medium=referral&utm_content=PickleKey/table-service&utm_campaign=Badge_Grade_Dashboard)
