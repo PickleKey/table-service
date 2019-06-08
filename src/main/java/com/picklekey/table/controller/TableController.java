@@ -5,6 +5,7 @@ import com.picklekey.table.repository.TableRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -26,7 +27,9 @@ public class TableController {
     @PostMapping("/reserveTable")
     public String reserveTable(@RequestParam("table_num") int num) {
 
-        Table table = new Table(num);
+        Table table = new Table();
+        table.setTableNum(num);
+        table.setCreatedDate(LocalDateTime.now());
 
         // get inventory from service
         System.out.println("Add to tabel_reserve");
